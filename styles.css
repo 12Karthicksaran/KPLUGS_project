@@ -1,0 +1,151 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+header {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.back-video{
+    position: fixed;
+    opacity: 40%;
+    top: 50%;
+    left: 50%;
+    min-width: 50%;
+    min-height: 50%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    background-size: contain;
+}
+
+@media (min-aspect-ratio:16/9){
+    .back-video{
+    width: 100%;
+    height: auto;
+    }
+}
+@media (max-aspect-ratio:16/9){
+    .back-video{
+    width: auto;
+    height: 100%;
+    }
+}
+
+
+header h1 {
+    margin: 0;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 1.1em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#home h2, #products h2, #contact h2 {
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+#home p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+#products .product-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.product h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #522424;
+}
+
+.product p {
+    font-size: 1.1em;
+    color: #3ca314;
+    font-weight: 600;
+}
+
+#contact p {
+    font-size: 1.1em;
+    color: hsl(0, 0%, 100%);
+}
+
+footer {
+    background-color: #ff0000;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+    font-weight: 300;
+}
